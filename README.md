@@ -1,2 +1,5 @@
-# Intro-to-Programming-Nanodegree
-Things I made as part of Udacity's Intro to Programming Nanodegree 
+# Stage 0 Project - Intro to Programming Nanodegree 
+
+##<em>Notes on</em> Stage 0 - HTML Basics, <em>in HTML</em>.
+
+My first project is meta, man. 
