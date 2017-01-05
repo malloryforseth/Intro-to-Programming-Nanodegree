@@ -1,0 +1,101 @@
+* {
+color: #333333;
+font-family: "Century Gothic", sans-serif;
+}
+
+#bannerimage {
+max-width: 100%;
+margin-bottom: 0px;
+}
+
+.notes {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 100px;
+}
+.pagetitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #CBBB58;
+}
+
+.header {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 22px;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 22px;
+  background-color: #424242;
+}
+
+.headerinfo {
+  color: #CBBB58;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h2 {
+  color:#333333;
+  margin-top: 30px;
+}
+
+h3 {
+color: #CBBB58;
+}
+
+h4 {
+  color: #646464
+}
+
+h5 {
+  font-size: 15px;
+  color: #C05949;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+code {
+  font-family: Courier, monospace;
+  font-size: 14px;
+  color: #753A48
+}
+
+a {
+  color: #25AAA0}
+
+.chapternotes {
+  padding-left: 5px;
+}
+
+.subchapter {
+  padding-left: 15px;
+}
+
+.subchapternotes {
+  padding-left: 5px;
+}
+
+.subchapterconcept {
+  padding-left: 15px;
+}
+
+.docstructure{
+  padding-left: 20px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.flexexample{
+  padding-left: 10px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.flexexampleindent{
+  padding-left: 24px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

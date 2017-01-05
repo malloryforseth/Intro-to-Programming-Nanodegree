@@ -1,78 +1,339 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title> Stage 0 Notes: Basics of the Web and HTML</title>
-  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Notes, Stage 0 & 1</title>
+  </head>
   <body>
-    <div>
-      <h1>Stage 0 Notes - Basics of the Web and HTML</h1>
-      <p><b>Udacity Intro to Programming Nanodegree</b><br>
-      Mallory Forseth<br>
-      <em>December 28, 2016</em><p>
+    <div id="banner">
+      <img src="Images/notebook.jpg" alt="Photo of Blank Notepad and Pen on Desk" id=bannerimage>
     </div>
-    <div>
-      <h2>I. The Web</h2>
-      <ul>
-        <li>collection of HTML documents.</li>
-        <li>browser uses HTTP to make requests from servers.</li>
-      </ul>
+    <div class="header">
+      <h1 class="pagetitle">Course Notes, Stage 0 & 1 - Intro to HTML and CSS</h1>
+      <div class="headerinfo">
+        <p class="headerinfo">
+          Udacity Intro to Programming Nanodegree
+        </p>
+        <p class="headerinfo">
+          Mallory Forseth
+        </p>
+        <p class="headerinfo">
+          January 5, 2017
+      </div>
     </div>
-    <div>
-      <h2>II. HTML <em>(hypertext markup language)</em></h2>
-      <p><b>HTML is made up of:</b></p>
-        <ul>
-          <li>text content (what you see)</li>
-          <li>markup (what it looks like)</li>
-          <li>references to other documents</li>
-          <li>links to other pages</li>
-        </ul>
-      </div>
-      <div>
-        <h3>A. HTML Markup</h3>
-        <h4>i. Tags</h4>
-        <ul>
-          <li>The basic structure of tags is: <code>&lt;name&gt;contents&lt;/name&gt;</code></li>
-          <li>if you forget to add closing tag, open tag will apply to everything that follows it.</li>
-          <li><a href="scratchpad.io">scratchpad.io</a> and other editors will autocreate closing tags.</li>
-        </ul>
-      </div>
-      <div>
-        <p><b>A few useful examples</b></p>
-        <ul>
-          <li>bold tag: <code>&lt;b&gt;contents&lt;/b&gt;</code></li>
-          <li>emphasis tag (italics): <code>&lt;em&gt;contents&lt;/em&gt;</code></li>
-          <li>break tag (<em>inline</em>): <code>&lt;br&gt;</code> (void - does not require closing tag)</li>
-          <li>paragraph tag (<em>block</em>): <code>&lt;p&gt;content&lt;/p&gt;</code></li>
-        </ul>
-      </div>
-      <div>
-        <h4>ii. Attributes</h4>
-        <p>The basic structure of attributes is: <code>&lt;tag attr="value"&gt; contents &lt;/tag&gt;</code></p>
-      </div>
-      <div>
-        <p><b>A few useful examples</b></p>
-        <ul>
-          <li>Anchor <code>&lt;a&gt;</code> for creating links:
-    <code>&lt;a href="www.reddit.com">derp&lt;/a&gt;</code></li>
-          <li>Image tags (<em>inline</em>): <code>&lt;img src="url" alt="text"&gt;</code></li>
-        </ul>
-      </div>
-      <div>
-        <h3>B. Basic HTML Document Structure</h3>
-        <p><code>&lt;!DOCTYPE HTML&gt;</code><br>
-          <code>&lt;html&gt;</code><br>
-          <code>&lt;head&gt;</code><br>
-          <code>&lt;title>Title!&lt;/title&gt;</code><br>
-          <code>&lt;/head&gt;</code><br>
-          <code>&lt;body&gt;</code><br>
-          <code>&lt;b&gt;content&lt;/b&gt;</code><br>
-          <code>&lt;/body&gt;</code><br>
-          <code>&lt;/html&gt;</code><br></p>
-      </div>
-      <div>
-        <h2>III. Resources</h2>
-        <p><a href="scratchpad.io">scratchpad.io</a> - html + css editor<br>
-          <a href="http://www.w3schools.com">www.w3schools.com</a> - web dev reference guides</p>
+    <div class="notes">
+        <div class="stage" id="stage0">
+            <h2 class="stagetitle">Stage 0 Notes - Getting Started with HTML</h2>
+          <div class="chapter">
+            <h3 class="chaptertitle">The Web</h3>
+            <p class="chapternotes">
+              The web is a collection of HTML documents. To browse the web, your browser uses HTTP to make requests from servers.
+            </p>
+          </div>
+          <div class="chapter">
+              <h3 class="chaptertitle">HTML (hypertext markup language)</h3>
+              <div class="chapternotes">
+                <div class="chapterintro">
+                  <p>
+                    HTML is made up of:
+                  </p>
+                    <ul>
+                      <li>text content (what you see)</li>
+                      <li>markup (what it looks like)</li>
+                      <li>references to other documents</li>
+                      <li>links to other pages</li>
+                    </ul>
+                  </div>
+                  <div class="subchapter">
+                    <h4 class="subchaptertitle">HTML Markup</h4>
+                    <div class="subchapternotes">
+                      <div class="subchapterconcept">
+                        <h5>Tags</h5>
+                        <p>
+                          The basic structure of tags is: <code>&lt;name&gt;contents&lt;/name&gt;</code>
+                        </p>
+                        <p>
+                          If you forget to add closing tag, open tag will apply to everything that follows it.<a href="scratchpad.io">scratchpad.io</a> and other editors will help avoid this by autocreating closing tags for you.
+                        </p>
+                        <div class="examples">
+                          <p class="exampleheading">
+                            A few useful examples:
+                          </p>
+                          <ul>
+                            <li>bold tag: <code>&lt;b&gt;contents&lt;/b&gt;</code></li>
+                            <li>emphasis tag (italics): <code>&lt;em&gt;contents&lt;/em&gt;</code></li>
+                            <li>break tag (<em>inline</em>): <code>&lt;br&gt;</code> (void - does not require closing tag)</li>
+                            <li>paragraph tag (<em>block</em>): <code>&lt;p&gt;content&lt;/p&gt;</code></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="subchapterconcept">
+                        <h5>Attributes</h5>
+                        <p>
+                          The basic structure of attributes is:
+                          <code>&lt;tag attr="value"&gt; contents &lt;/tag&gt;</code>
+                        </p>
+                        <div class="examples">
+                          <p class="exampleheading">
+                            A few useful examples:
+                          </p>
+                          <ul>
+                            <li>Anchor <code>&lt;a&gt;</code> for creating links:
+                              <code>&lt;a href="www.reddit.com">derp&lt;/a&gt;</code></li>
+                            <li>Image tags (<em>inline</em>): <code>&lt;img src="url" alt="text"&gt;</code></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="subchapter">
+                    <h4 class="subchaptertitle">Basic HTML Document Structure</h4>
+                    <div class="subchapternotes">
+                      <p class="docstructure">
+                        <code>&lt;!DOCTYPE HTML&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;html&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;head&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;title>Title!&lt;/title&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;/head&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;body&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;b&gt;content&lt;/b&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;/body&gt;</code>
+                      </p>
+                      <p class="docstructure">
+                        <code>&lt;/html&gt;</code>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chapter">
+              <h3 class="chaptertitle">Resources</h3>
+                <div class="chapternotes">
+                  <p>
+                    <a href="scratchpad.io">scratchpad.io</a> - html + css editor
+                  </p>
+                  <p>
+                    <a href="http://www.w3schools.com">www.w3schools.com</a> - web dev reference guides
+                  </p>
+                </div>
+              </div>
+            </div>
+          <div class="stage" id="stage1">
+            <div>
+              <h2 class="stagetitle">Stage 1 Notes - Basics of HTML and CSS</h2>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle">HTML vs CSS</h3>
+              <div class="chapternotes">
+                <p>
+                  <b>HTML</b> defines structure of a website,
+                  <b>CSS</b> defines style.
+                </p>
+              </div>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle">Tree-like Structure of Webpages</h3>
+              <div class="chapternotes">
+                <p>
+                  HTML classifies page content in a branching structure,
+                  using opening and closing tags to classify elements
+                  and content.
+                </p>
+              </div>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle">Boxes Galore</h3>
+              <div class="chapternotes">
+                <p>
+                  Everything on websites is contained in boxes.
+                  These boxes are created in code through div/span tags
+                  and elements.
+                </p>
+              </div>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle">HTML Class Attributes</h3>
+              <div class="chapternotes">
+                <p>
+                  Class attributes are like labels on boxes.
+                  Class names should express purpose of code.
+                  (e.g. Title, Image, etc.)
+                </p>
+              </div>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle"> CSS (Cascading Style Sheets)</h3>
+              <div class="chapternotes">
+                <ul>
+                  <li><b>Cascading</b> - rules are applied both to elements they directly match AND all of
+                  the child elements of those elements. If
+                  a child element has multiple overlapping
+                  rules defined for it, the <em>most specific</em> rule is applied.</li>
+                  <li><b>Style</b> - looks/appearance to user</li>
+                  <li><b>Sheets</b> - you can have several CSS files, or sheets, all of them will be used to determine style of your page.</li>
+                </ul>
+                <div class="subchapter">
+                  <h4 class="subchaptertitle">Search and Replace</h4>
+                  <div class="subchapternotes">
+                    <p>
+                      CSS can also be thought of as a search and replace tool where you search for elements using a class or tag, and then identify what you want to do to change it (what property values to replace with different values).
+                    </p>
+                  </div>
+                </div>
+                <div class="subchapter">
+                  <h4 class="subchaptertitle">Order Matters</h4>
+                  <div class="subchapternotes">
+                    <p>
+                      Where you define things and the order those
+                      definitions are applied in matters. Styles are applied in the following order, and definitions
+                      further down the list overwrite previous definitions:
+                    </p>
+                    <ol>
+                      <li>browser default style</li>
+                      <li>stylesheet in a separate file</li>
+                      <li>stylesheet in HTML (not ideal)</li>
+                      <li> inline style in an element (avoid)</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="subchapter">
+                  <h4 class="subchaptertitle">Selectors</h4>
+                  <div class="subchapternotes">
+                    <p>
+                      Selectors determine what elements of the page a style will apply to, by selecting tag, class, etc.(e.g. all paragraphs - <code>p {}</code>, all items with class
+                      "description" - <code>.description {}</code>).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chapter">
+              <h3 class="chaptertitle">The Box Model</h3>
+              <div class="chapternotes">
+                <div class="subchapter">
+                  <h4 class="subchaptertitle">Nesting</h4>
+                  <div class="subchapternotes">
+                    <p>
+                      Boxes have 4 nested parts. From the center outwards they are:
+                    </p>
+                    <ol>
+                      <li>Content</li>
+                      <li>Padding - space around the content, will reflect background color of box</li>
+                      <li>Border - comes from color property of box</li>
+                      <li>Margin - clear area around border, 100% transparent, "space btw boxes"</li>
+                    </ol>
+                    <p>
+                      <a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/box-model.html">See more about nesting here</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="subchapter">
+                  <h4 class="subchaptertitle">Techniques for Sizing Boxes</h4>
+                  <div class="subchapternotes">
+                    <ul>
+                      <li>Set sizes in percentages instead of pixels.</li>
+                      <li>Additionally, setting <em>max-width</em> will allow element to adjust in size as size of window is changed, but not exceed max width set.</li>
+                      <li>Set the box-sizing attribute to border-box. This will calculate size including content, padding, and border together.</li>
+                    </ul>
+                  </div>
+                </div>
+                  <div class="subchapter">
+                    <h4 class="subchaptertitle">Positioning Boxes using Flex Box</h4>
+                    <div class="subchapternotes">
+                      <p>
+                        To place multiple elements next to one another, change
+                        the display attribute of the parent container to value = flex, and give the items a default value less than 100%.
+                        example -
+                      </p>
+                      <p class="flexexample">
+                        <code>.app {</code>
+                      </p>
+                      <p class="flexexampleindent">
+                            <code>display: -webkit-flex;</code>
+                      </p>
+                      <p class="flexexampleindent">
+                            <code>display: flex;</code>
+                      </p>
+                      <p class="flexexample">
+                        <code>}</code>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="chapter">
+                  <h3 class="chaptertitle">Alt Attributes</h3>
+                  <div class="chapternotes">
+                    <p>
+                      Alt attributes display text in the case that images won't load and provide text descriptions of images for the visually impaired. Here is an example of how to add an alt attribute: <code>&lt;img src="img/app.png" alt="This is a screenshot"&gt;</code>
+                    </p>
+                  </div>
+                </div>
+                <div class="chapter">
+                  <h3 class="chaptertitle">Code, Test, Refine</h3>
+                  <div class="chapternotes">
+                    <p>
+                      Order of operations:
+                    </p>
+                    <ol>
+                      <li>Page structure - look for natural boxes to boxify design.</li>
+                      <li>Look for repeated styles & semantic elements - these will be defined with tags to determine headings, descriptions, etc.</li>
+                      <li>Write HTML.</li>
+                      <li>Apply styles from biggest (site-wide elements) to smallest (e.g. widgets).</li>
+                      <li>Fix things - test in other browsers, window sizes, mobile, etc.</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="chapter">
+                  <h3 class="chapterheadline">DevTools</h3>
+                  <div class="chapternotes">
+                    <p>
+                      DevTools can be used to test things without changing your html & css files. Refresh the page to reset.
+                      To save changes made in DevTools, "select the source file in the 'Sources' tab, right or control+click on the file you wish to save, select 'Save As' and save the file to the directory that contains the original file. You may want to create a back-up copy of the file before making changes to it."
+                    </p>
+                  </div>
+                </div>
+                <div class="chapter">
+                  <h3 class="chaptertitle">Resources</h3>
+                  <div class="chapternotes">
+                    <p>
+                      CSS documentation - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">https://developer.mozilla.org/en-US/docs/Web/CSS/Reference</a>
+                    </p>
+                    <p>
+                      CSS selectors - <a href="https://css-tricks.com/how-css-selectors-work/">https://css-tricks.com/how-css-selectors-work/</a>
+                    </p>
+                    <p>
+                      CSS summary - <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/0001345402/modules/383612889175460/lessons/4131369051/concepts/36111086980923">Udacity CSS Summary</a>
+                    </p>
+                    <p>
+                      Guide to Flexbox - <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a>
+                    </p>
+                    <p>
+                      HTML Element Reference - <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning">https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning</a>
+                    </p>
+                    <p>
+                      To Verify HTML Code - <a href="http://validator.w3.org/#validate_by_input">http://validator.w3.org/#validate_by_input</a>
+                    </p>
+                    <p>
+                      To Verify CSS Code - <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">http://jigsaw.w3.org/css-validator/#validate_by_input</a>
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
   </body>
 </html>
